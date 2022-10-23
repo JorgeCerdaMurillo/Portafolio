@@ -51,31 +51,31 @@
           <!--REDES SOCIALES-->
           <div class="d-none d-md-block icons-social-networks">
             <!--FB -->
-            <a href="#" target="_blank" class="bg-facebook">
+            <a href="https://www.facebook.com/kokis.cm.5" target="_blank" class="bg-facebook">
               <img src="img/icons/facebook.svg" alt="">
             </a>
             <!--TW -->
-            <a href="#" target="_blank" class="bg-twitter mx-3">
+            <a href="https://twitter.com/JureTri00" target="_blank" class="bg-twitter mx-3">
               <img src="img/icons/twitter.svg" alt="">
             </a>
             <!--IN -->
-            <a href="#" target="_blank" class="bg-linkedin">
+            <a href="https://www.linkedin.com/in/jorge-cerda-murillo-02b53a217/" target="_blank" class="bg-linkedin">
               <img src="img/icons/linkedin.svg" alt="" height="46%" width="46%">
             </a>
             </div>
         </div>
         <!--PRESENTACION -->
 
-        <div class="col-8 col-md-3">
+        <div class="col-8 col-md-4">
           <div class="photo-frame shadow">
-          
             <img src="./img/jorge.jpeg" alt="Jorge Cerda" class="w-100 perfil" >
           </div>
+          <p id="secService"></p>
         </div>
       </header>
-      <HR></HR>
+      <HR ></HR>
     <!--SERVICIOS -->
-    <section class="row justify-content-around text-center" id="secService"> 
+    <section class="row justify-content-around text-center" > 
       <!--TITULO -->
       <h2 class="col-12 display-4 text-capitalize mb-3">
         What I Do?
@@ -141,15 +141,123 @@
         <p class="text-muted fw-light">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quia minima officiis sequi harum. Facilis ut quos ea eius natus, minus officiis ipsam dolore laborum saepe? Asperiores culpa esse nulla!
         </p>
-        <a href="img/CerdaMurilloJorge_CV_English.pdf" download="CV-JorgeCerda" class="btn btn-danger rounded-pill px-4">
+        <a id="secPortafolio" href="img/CerdaMurilloJorge_CV_English.pdf" download="CV-JorgeCerda" class="btn btn-danger rounded-pill px-4">
           Download CV
         </a>
       </div>
     </section>
     <HR></HR>
+    <!--PORTAFOLIO -->
+    <main class="row justify-content-center pt-5 sec-portfolio-js" >
+      <!-- columna 1 -->
+      <div class="col-10 col-md-4 ">
+        <div class="row ">
+          <!-- img1 -->
+          <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+            <img src="img/portfolio/portfoli2.png" alt="Modelado 3D" class="w-100 img-btn-modal-js">
+          </a>
+          <!-- img2 -->
+          <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+            <img src="img/portfolio/Portfolio-04.png" alt="Diseño grafico" class="w-100 img-btn-modal-js">
+          </a>
+          <!-- img3 -->
+          <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+            <img src="img/portfolio/Portfolio-01.png" alt="Branding" class="w-100 img-btn-modal-js">
+          </a>
+        </div>
+      </div>
+      <!-- columna 2 -->
+      <div class="col-10 col-md-8">
+        <div class="row">
+          <h2 class="col-12 py-3 text-end display-4">Portfolio</h2>
+          <!-- img1 -->
+          <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+            <img src="img/portfolio/portfoli1.png" alt="Web Design" class="w-100 h-200 img-btn-modal-js">
+          </a>
+          <!-- img2 -->
+          <a href="" class="col-12 col-md-6 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+            <img src="img/portfolio/Portfolio–02.png" alt="Ilustracion" class="w-100 img-btn-modal-js">
+          </a>
+          <!-- img3 -->
+          <a href="" class="col-12 col-md-6 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+            <img src="img/portfolio/Portfolio-06.png" alt="Branding" class="w-100 img-btn-modal-js">
+          </a>          
+        </div>
+      </div>
+      <!-- Modal General -->
+      <div class="col-9 modal fade" id="modal-portfolio">
+        <div class="modal-dialog position-relative modal-dialog-centered">
+          <img src="" alt="" class="w-100 img-modal-js">
+        </div>
+      </div>
+    </main>
   </div>
+  <!-- clientes -->
+  <div class="bg-purple">
+    <!-- marcas -->
+    <div class="container">
+      <div class="row align-items-center justify-content-around py-5 sec-clients">
+        <!-- elemento 1 -->
+        <a href="#" class="col-sm-5 col-md-3">
+          <img src="img/customers/dashlane.svg" alt="Dashlane" class="w-75">
+        </a>
+        <!-- elemento 2 -->
+        <a href="#" class="col-sm-5 col-md-3">
+          <img src="img/customers/aerospike.svg" alt="Aerospike" class="w-75">
+        </a>
+        <!-- elemento 3 -->
+        <a href="#" class="col-sm-5 col-md-3">
+          <img src="img/customers/kong.svg" alt="Kong" class="w-75">
+        </a>
+        <!-- elemento 4 -->
+        <a href="#" class="col-sm-5 col-md-3">
+          <img src="img/customers/typo3.svg" alt="Thypo3" class="w-75">
+        </a>
+      </div>
 
- 
+    </div>
+  </div>
+  <!-- contacto -->
+  <div class="container" id="secContact">
+    <section class="row justify-content-center">
+      <div class="col-9 col-lg-7 bg-white text-center py-4 px-3 shadow position-relative photo-frame">
+        <p class="h6 text-muted fw-light">Have any in mind? Say hello at</p>
+        <a href="mailto:cerdamurillojorge00@gmail.com" class="h3 text-decoration-none">cerdamurillojorge00@gmail.com</a>
+      </div>
+    </section>
+    <!-- Navbar -->
+    <div class="row justify-content-center text-center">
+      <!-- brand -->
+      <img src="img/logo-j-2.png" alt="" class="logo">
+      <!-- items -->
+      <nav class="col-11 justify-content-center mb-4 py-4 seleccionadores">
+      <a href="#"class="text-decoration-none px-3">Inicio</a>
+      <a href="#secService" class="text-decoration-none px-3">Servicios</a>
+      <a href="#secPortafolio"class="text-decoration-none px-3">Portafolio</a>
+      <a href="#secContact"class="text-decoration-none px-3">Contacto</a>
+    </nav>
+    <!-- REDES SOCIALES -->
+    <div class="icons-social-networks">
+      <!--FB -->
+      <a href="https://www.facebook.com/kokis.cm.5" target="_blank" class="bg-facebook">
+        <img src="img/icons/facebook.svg" alt="">
+      </a>
+      <!--TW -->
+      <a href="https://twitter.com/JureTri00" target="_blank" class="bg-twitter mx-3">
+        <img src="img/icons/twitter.svg" alt="">
+      </a>
+      <!--IN -->
+      <a href="https://www.linkedin.com/in/jorge-cerda-murillo-02b53a217/" target="_blank" class="bg-linkedin">
+        <img src="img/icons/linkedin.svg" alt="" height="46%" width="46%">
+      </a>
+      </div>
+    </div>
+  </div>
+  <!-- PIE DE PAGINA -->
+  <footer class="bg-purple text-center p-4">
+    &#169; Jorge Cerda 2021. All rights reserved
+  </footer>
+
  <!-- JS Bootstrap -->
  <script
  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 

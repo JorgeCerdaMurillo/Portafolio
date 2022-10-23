@@ -36,24 +36,30 @@ nav.active .logo img{
   justify-content: space-between;
   padding: 25px;
   transition: all 0.5s ease;
+  transition: 0.4s;
 
 
 }
 .nav.active{
   background:#000;
   padding: 15px;
+  transition: 0.4s;
+
 
 }
 .nav.active .logo,
 .nav.active .menu a,
 .nav.active .menu-btn i {
   color: #fff;
+  transition: 0.4s;
+
 
 
 
 }
 .nav.active .menu{
   background: rgba(0, 0, 0, 0.801);
+  transition: 0.4s;
 
 }
 .nav.active .menu a:hover {
@@ -71,11 +77,13 @@ nav.active .logo img{
 
 .menu{
   display: flex;
+  
 
 }
 .menu li{
   list-style: none;
   margin: 10px;
+  transition: 0.4s;
 
 }
 .menu li a{
@@ -99,6 +107,7 @@ color: #000;
 font-size: 20px;
 display: none;
 cursor: pointer;
+
 
 }
 @media screen and (max-width:1024px){
@@ -138,12 +147,14 @@ cursor: pointer;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: .5s filter;
 
 }
-.icons-social-networks > a:hover{
+.icons-social-networks > a, .sec-clients>a{
+  transition: .4s filter;
+  }
+.icons-social-networks > a:hover, .sec-clients>a:hover{
 filter: opacity(0.5);
-transition: .5s filter;
+transition: .4s filter;
 }
 .bg-facebook{
   background-color: #3B5998;
@@ -160,7 +171,6 @@ transition: .5s filter;
 border-color: #000;
 border-style: groove;
 border-width: 20px;
-
 }
 
 /*.photo-frame {
@@ -215,3 +225,26 @@ padding: 10px;
   min-height: 100vh;
 
 }
+/*PORTAFOLIO*/
+.portfolio-item > img{
+  transition:0.4s transform ;
+  
+}
+.portfolio-item > img:hover{
+  transform: scale(0.96);
+
+}
+/*clientes*/
+.bg-purple{
+  background-color: rgba(60, 138, 201, 0.3);
+  filter: opacity(0.55);
+
+}
+/*Contacto*/
+.seleccionadores>a{
+  transition: 0.3s;
+}
+.seleccionadores>a:hover{
+  font-weight: bold;
+}
+
