@@ -5,10 +5,12 @@
   --color-gray-medium: #f8f9fa;
   --color-yellow: #fac32c;
 } 
+
 /*ESTILOS GENERALES*/
 a{
   color: inherit;
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,7 +19,27 @@ body {
 }
 /*NAV BAR*/
 
-.logo img{
+.navbar-brand>img{
+  width: 125px;
+}
+
+.navbar-main .active{
+  text-shadow: #000;
+  text-underline-offset: 9px;
+}
+.nav-link:hover{
+  background-color: rgb(37, 99, 150);
+  color: white;
+  font-weight: bolder;
+}
+.navbar{
+  padding: 0;
+}
+.nav-link{
+padding: lem;
+color: #000;
+}
+  /*.logo img{
   height: 100%;
   width: 100%;
   padding: 5px 20px; 
@@ -66,16 +88,16 @@ nav.active .logo img{
   background: #fff;
   color: #000;
 
-}
+}*/
 .logo{
-  /*font-size: 25px;
+  font-size: 25px;
   color: #000;
-  font-weight: 100;*/
+  font-weight: 100;
   width: 200px;
 }
 /*MENU*/
 
-.menu{
+/*.menu{
   display: flex;
   
 
@@ -136,9 +158,11 @@ cursor: pointer;
 
    }
 }
-/*PRESENTACION*/
 
-
+/*HEADER*/
+.header-main{
+  height: 100vh;
+}
 .icons-social-networks > a{
   --size: 40px;
   width:var(--size) ;
@@ -167,13 +191,12 @@ transition: .4s filter;
   background-color: #0E76A8;
 
 }
-.perfil{
-border-color: #000;
-border-style: groove;
-border-width: 20px;
+/*PRESENTACION*/
+.IMGTAM{
+  height: 90%;
+  width: 90%;
 }
-
-/*.photo-frame {
+.photo-frame {
   font-size: 20px;
 }
 .photo-frame::before, .photo-frame::after{
@@ -183,19 +206,19 @@ border-width: 20px;
   height: var(--box-size);
   position: absolute;
   z-index: -10;
-  animation: turnZ 7s linear alternate-reverse;
+  animation: turnZ 7s linear infinite;
 
 }
 .photo-frame::before{
   --box-size:3em;
   background-image: radial-gradient(var(--color-blue-medium)50%, var(--color-purple) 50%);
-  top:calc(83% - (var(--box-size)/2));
-  right:calc(42% - (var(--box-size)/2));
+  top:calc(99% - (var(--box-size)/2));
+  right:calc(99% - (var(--box-size)/2));
 }
 .photo-frame::after{
   --box-size:5em;
-  bottom: calc(83% - (var(--box-size)/2));
-  left: calc(83% - (var(--box-size)/2));
+  bottom: calc(98% - (var(--box-size)/2));
+  left: calc(98% - (var(--box-size)/2));
   background: linear-gradient(
     45deg, 
     var(--color-gray-medium) 45%, 
@@ -212,7 +235,7 @@ border-width: 20px;
   to{
     transform: rotate(1turn);
   }
-}*/
+}
 
 /*SERVICIOS*/
 .icon-service{
@@ -246,5 +269,18 @@ padding: 10px;
 }
 .seleccionadores>a:hover{
   font-weight: bold;
+}
+
+@media screen and (max-width: 376px){
+  body{
+    margin-top: 4rem;
+  }
+  .header-main{
+    height: initial;
+  }
+  .photo-frame {
+    font-size: 11px;
+  }
+  
 }
 

@@ -19,24 +19,34 @@
    
     <!-- JS Main -->
     <!--Nav Bar-->
-    
-    <nav class="nav">
-      <div class="logo"><img src="img/logo-j-2.png" alt=""></div>
-    <ul class="menu">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#secService">Servicios</a></li>
-      <li><a href="#secPortafolio">Portafolio</a></li>
-      <li><a href="#secContact">Contacto</a></li>
-    </ul>
 
-    <div class="menu-btn">
-      <i class="fa-solid fa-bars"></i>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light navbar-main">
+      <div class="container">
+      <!-- logo -->
+      <a href="" class="navbar-brand">
+        <img src="img/logo-j-2.png" alt="Logo Jorge Cerda">
+      </a>
+      <!-- boton -->
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="flase" aria-label="Barra de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navegaciones -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <div class="nav ms-auto sel flex-column flex-md-row">
+          <a href="index.html" class="nav-link  active">Home</a>
+          <a href="#secService" class="nav-link ">Service</a>
+          <a href="#secPortafolio" class="nav-link ">Portfolio</a>
+          <a href="#secContact" class="nav-link ">Contact</a>
+        </div>
+      </div>
     </div>
     
     </nav>
+
+  </div>
   <div class="container">
-      <header class="row align-items-center header-main">
-        <div class="col-md-7">
+      <header class="row align-items-center header-main justify-content-center">
+        <div class="col-md-7 text-center text-md-start">
           <!--SALUDO-->
           <br><br>
           <h1 class="display-2">
@@ -64,11 +74,11 @@
             </a>
             </div>
         </div>
+      
         <!--PRESENTACION -->
-
         <div class="col-8 col-md-4">
-          <div class="photo-frame shadow">
-            <img src="./img/jorge.jpeg" alt="Jorge Cerda" class="w-100 perfil" >
+          <div class="photo-frame position-relative shadow IMGTAM">
+            <img src="./img/jorge.jpeg" alt="Jorge Cerda" class="w-100" >
           </div>
           <p id="secService"></p>
         </div>
@@ -82,7 +92,7 @@
       </h2>
       <!--TARJETAS -->
       <!--TARJETA 1 -->
-      <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light">
+      <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
             <!--ICONO -->
             <img src="./img/icons/pen.svg" alt="Icon Pen" class="bg-danger bg-gradient d-inline-bloc rounded-circle mb-3 icon-service">
             <!--TITULO -->
@@ -98,7 +108,7 @@
             <a href="#" class="btn btn-outline-danger">Go</a>
       </article>
       <!--TARJETA 2 -->
-      <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light">
+      <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
         <!--ICONO -->
         <img src="./img/icons/code.svg" alt="Icon Code" class="bg-warning bg-gradient d-inline-bloc rounded-circle mb-3 icon-service">
         <!--TITULO -->
@@ -114,7 +124,7 @@
         <a href="#" class="btn btn-outline-danger">Go</a>
       </article>
       <!--TARJETA 3 -->
-      <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light">
+      <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
         <!--ICONO -->
         <img src="./img/icons/brand.svg" alt="Icon brand" class="bg-info bg-gradient d-inline-bloc rounded-circle mb-3 icon-service">
         <!--TITULO -->
@@ -150,7 +160,7 @@
     <!--PORTAFOLIO -->
     <main class="row justify-content-center pt-5 sec-portfolio-js" >
       <!-- columna 1 -->
-      <div class="col-10 col-md-4 ">
+      <div class="col-10 col-md-4 order-2 order-md-1">
         <div class="row ">
           <!-- img1 -->
           <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
@@ -167,7 +177,7 @@
         </div>
       </div>
       <!-- columna 2 -->
-      <div class="col-10 col-md-8">
+      <div class="col-10 col-md-8 order-1 order-md-2">
         <div class="row">
           <h2 class="col-12 py-3 text-end display-4">Portfolio</h2>
           <!-- img1 -->
@@ -193,25 +203,25 @@
     </main>
   </div>
   <!-- clientes -->
-  <div class="bg-purple">
+  <div class="bg-purple d-none d-md-block">
     <!-- marcas -->
     <div class="container">
       <div class="row align-items-center justify-content-around py-5 sec-clients">
         <!-- elemento 1 -->
-        <a href="#" class="col-sm-5 col-md-3">
-          <img src="img/customers/dashlane.svg" alt="Dashlane" class="w-75">
+        <a href="https://itsa.edu.mx" class="col-sm-5 col-md-3">
+          <img src="img/customers/itsa.svg" alt="ITSA" class="w-75">
         </a>
         <!-- elemento 2 -->
-        <a href="#" class="col-sm-5 col-md-3">
-          <img src="img/customers/aerospike.svg" alt="Aerospike" class="w-75">
+        <a href="http://conalepapatzingan.edu.mx" class="col-sm-5 col-md-3">
+          <img src="img/customers/conalep.svg" alt="conalep" class="w-75">
         </a>
         <!-- elemento 3 -->
-        <a href="#" class="col-sm-5 col-md-3">
-          <img src="img/customers/kong.svg" alt="Kong" class="w-75">
+        <a href="https://icti.michoacan.gob.mx/convocatoria-de-expociencias-michoacan-2022/" class="col-sm-5 col-md-3">
+          <img src="img/customers/EXPOCIENCIAS.svg" alt="expociencias" class="w-75">
         </a>
         <!-- elemento 4 -->
-        <a href="#" class="col-sm-5 col-md-3">
-          <img src="img/customers/typo3.svg" alt="Thypo3" class="w-75">
+        <a href="https://icti.michoacan.gob.mx" class="col-sm-5 col-md-3">
+          <img src="img/customers/ICTI.svg" alt="icit" class="w-75">
         </a>
       </div>
 
@@ -222,7 +232,7 @@
     <section class="row justify-content-center">
       <div class="col-9 col-lg-7 bg-white text-center py-4 px-3 shadow position-relative photo-frame">
         <p class="h6 text-muted fw-light">Have any in mind? Say hello at</p>
-        <a href="mailto:cerdamurillojorge00@gmail.com" class="h3 text-decoration-none">cerdamurillojorge00@gmail.com</a>
+        <a href="mailto:cerdamurillojorge00@gmail.com" class="h3 text-decoration-none text-break">cerdamurillojorge00@gmail.com</a>
       </div>
     </section>
     <!-- Navbar -->
@@ -230,11 +240,11 @@
       <!-- brand -->
       <img src="img/logo-j-2.png" alt="" class="logo">
       <!-- items -->
-      <nav class="col-11 justify-content-center mb-4 py-4 seleccionadores">
-      <a href="#"class="text-decoration-none px-3">Inicio</a>
-      <a href="#secService" class="text-decoration-none px-3">Servicios</a>
-      <a href="#secPortafolio"class="text-decoration-none px-3">Portafolio</a>
-      <a href="#secContact"class="text-decoration-none px-3">Contacto</a>
+      <nav class="nav col-11 justify-content-center mb-4 py-4">
+        <a href="index.html" class="nav-link ">Home</a>
+        <a href="#secService" class="nav-link ">Service</a>
+        <a href="#secPortafolio" class="nav-link ">Portfolio</a>
+        <a href="#secContact" class="nav-link ">Contact</a>
     </nav>
     <!-- REDES SOCIALES -->
     <div class="icons-social-networks">
