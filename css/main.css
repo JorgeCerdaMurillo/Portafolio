@@ -78,6 +78,10 @@ transition: .4s filter;
   background-color: #0E76A8;
 
 }
+.bg-github{
+  background-color: #171515;
+  margin-left: 15px;
+}
 /*PRESENTACION*/
 .IMGTAM{
   height: 90%;
