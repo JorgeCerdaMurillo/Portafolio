@@ -16,6 +16,7 @@ body {
 }
 .container> .row{
   margin-bottom: 3rem;
+  
 }
 /*NAV BAR*/
 
@@ -213,4 +214,10 @@ padding: 10px;
   
 }
 
+#secTechnologies{
+  opacity: 0%;
+}
 
+#secContact{
+  opacity: 0%;
+}
